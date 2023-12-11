@@ -22,6 +22,9 @@ Rna-seq is the first step in pipeline…
 Slides 2-3
 
 ## 35.2 QC Report Analysis Modules<a name="352"></a>
+fastqc generates a final report in a .html file, which can be opened with any browser. Looking through this report, we can read the analysis modules and their metrics to assess the quality of our sequencing data.
+
+The report starts with a summary of the modules, each with an icon to represent their status as “PASS,” “WARNING,” or “FAIL.” The “WARNING” and “FAIL” flags are not meant to be taken at face value, rather noted as a sign to take a closer look at that module.
 
 ### 1) Basic Statistics<a name="3521"></a>
 ### 2) Per Base Sequence Quality<a name="3522"></a>
