@@ -15,11 +15,13 @@
 
 ## 35.1 Background<a name="351"></a>
 
-We expect a section about the background of the method, how the method works, its significance, and current tools (if applicable to your topic)
+Quality assessment of raw reads is the first and very crucial step in the RNAseq analysis pipeline. FastQC is one of the widely used tools to evaluate the quality of high throughput sequencing data. Developed by Simon Andrews at the Babraham Institute, FastQC was developed to address the vast amount of sequencing data produced from NGS in a fast and comprehensive manner. 
 
-Rna-seq is the first step in pipeline…
+FastQC takes a FASTQ file, and analyzes it to generate an easily interpretable report based on a variety of metrics, including sequence quality scores, sequence length distribution, GC content, sequence duplication levels, and the presence of overrepresented sequences or adapter contamination.
 
-Slides 2-3
+FastQC is extremely significant as it allows scientists to identify issues within their data such as poor quality bases, and make decisions about pre-processing steps like data trimming with FastP. This ensures we have high quality data, which is very important for downstream analysis.
+
+Some examples of current tools that extend from or are similar to FastQC are PRINSEQ and MultiQC. 
 
 ## 35.2 QC Report Analysis Modules<a name="352"></a>
 
