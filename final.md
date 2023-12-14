@@ -22,7 +22,7 @@ FastQC takes a FASTQ file, and analyzes it to generate an easily interpretable r
 
 FastQC is extremely significant as it allows scientists to identify issues within their data such as poor quality bases, and make decisions about pre-processing steps like data trimming with FastP. This ensures we have high quality data, which is very important for downstream analysis.
 
-Some examples of current tools that extend from or are similar to FastQC are PRINSEQ and MultiQC. 
+Some examples of current tools that extend from or are similar to FastQC are PRINSEQ and MultiQC[13]. 
 
 ## 35.2 QC Report Analysis Modules<a name="352"></a>
 FASTQC generates a final report in a .html file, which can be opened with any browser. Looking through this report, we can read the analysis modules and their metrics to assess the quality of our sequencing data. <br>
@@ -235,3 +235,4 @@ In general, FASTQC reports simple quality control checks to ensure that there ar
 [10] Sheikh, M.A., Erlich, Y. (2012). Base-Calling for Bioinformaticians. In: Rodríguez-Ezpeleta, N., Hackenberg, M., Aransay, A. (eds) Bioinformatics for High Throughput Sequencing. Springer, New York, NY. https://doi.org/10.1007/978-1-4614-0782-9_5 <br>
 [11] Romero, Natsuki. FASTQC Report: ERR188044_chrX_1.fastq. file:///C:/Users/natsuki/Documents/BENG%20183/HW3/fastqc/ERR188044_chrX_1_fastqc.html <br>
 [12] Bioinfo-Core. (2010 October 28). Assessing Sequence Quality Data. http://bioinfo-core.org/index.php/9th_Discussion-28_October_2010#The_type_of_problems_which_occur_during_sequencing_experiments <br>
+[13] https://bioinformaticshome.com/tools/rna-seq/descriptions/PRINSEQ.html#gsc.tab=0 <br>
