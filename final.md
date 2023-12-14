@@ -52,8 +52,7 @@ This module gives us the Phred quality score across all bases at each position i
 
 It is normal for quality to start low for the first 5-7 bases, then rise. Additionally, average quality scores generally drop over the length of the read. Both phenomenon are related to signal intensity and purity of fluorescent signaling during Illumina Sequencing[3]. 
 
-<img src="per_base_seq_quality_good.png" alt="image" width="500" height="auto">
-<img src="per_base_seq_quality_bad.png" alt="image" width="500" height="auto"> <br>
+<img src="per_base_seq_quality_good.png" alt="image" width="500" height="auto"> | <img src="per_base_seq_quality_bad.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if the lower quartile < 10 or median < 25 for any base.
 
