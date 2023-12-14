@@ -12,6 +12,7 @@
 	2.9. [Sequence Duplication Levels](#3529)<br>
 	2.10. [Overrepresented Sequences](#35210)<br>
 	2.11. [Adapter Content](#35211)<br>
+3. [Conclusion](#353)
 
 ## 35.1 Background<a name="351"></a>
 
@@ -203,6 +204,24 @@ Adapter Dimer Contaminated Module[4]: <br>
 
 **Failure**: issued if any sequence is present in > 10% of all reads [1].
 
+## 35.3 Conclusion<a name="353"></a>
+Looking over the FASTQC report, we can identify possible problems with our data such as:
+- Poor and failed sequencing
+	- Quality that drops off evenly over the course of a run
+	- Poor quality which only affects a subset of sequences
+	- Poor quality which affects a run
+- Base call bias
+	- Biases affecting the whole run
+	- Biases affecting certain base positions
+- Sample contamination via <br>
+	- Primer/Adapters
+	- Repeats
+	- Ribosomal RNA <br>
+
+[12] <br> 
+
+In general, FASTQC reports simple quality control checks to ensure that there are no problems with the raw data, as these may affect the ability to draw biological conclustions from the data later in the RNA-seq analysis pipeline[1]. <br>
+
 # References
 [1] Babraham Bioinformatics. Index of /projects/fastqc/Help/3 Analysis Modules. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/ <br>
 [2] University of Missouri. FASTQC_Manual. https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf <br>
@@ -214,4 +233,5 @@ Adapter Dimer Contaminated Module[4]: <br>
 [8] Babraham Bioinformatics. (2023, May 18). FASTQC Report: good_sequence_short.txt. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html <br> 
 [9] Wikipedia. Phred quality score. https://en.wikipedia.org/wiki/Phred_quality_score <br>
 [10] Sheikh, M.A., Erlich, Y. (2012). Base-Calling for Bioinformaticians. In: Rodríguez-Ezpeleta, N., Hackenberg, M., Aransay, A. (eds) Bioinformatics for High Throughput Sequencing. Springer, New York, NY. https://doi.org/10.1007/978-1-4614-0782-9_5 <br>
-[11] Romero, Natsuki. FASTQC Report: ERR188044_chrX_1.fastq. file:///C:/Users/natsuki/Documents/BENG%20183/HW3/fastqc/ERR188044_chrX_1_fastqc.html
+[11] Romero, Natsuki. FASTQC Report: ERR188044_chrX_1.fastq. file:///C:/Users/natsuki/Documents/BENG%20183/HW3/fastqc/ERR188044_chrX_1_fastqc.html <br>
+[12] Bioinfo-Core. (2010 October 28). Assessing Sequence Quality Data. http://bioinfo-core.org/index.php/9th_Discussion-28_October_2010#The_type_of_problems_which_occur_during_sequencing_experiments <br>
