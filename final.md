@@ -24,6 +24,9 @@ FastQC is extremely significant as it allows scientists to identify issues withi
 Some examples of current tools that extend from or are similar to FastQC are PRINSEQ and MultiQC. 
 
 ## 35.2 QC Report Analysis Modules<a name="352"></a>
+fastqc generates a final report in a .html file, which can be opened with any browser. Looking through this report, we can read the analysis modules and their metrics to assess the quality of our sequencing data.
+
+The report starts with a summary of the modules, each with an icon to represent their status as “PASS,” “WARNING,” or “FAIL.” The “WARNING” and “FAIL” flags are not meant to be taken at face value, rather noted as a sign to take a closer look at that module.
 
 ### 1) Basic Statistics<a name="3521"></a>
 ### 2) Per Base Sequence Quality<a name="3522"></a>
@@ -33,8 +36,6 @@ Some examples of current tools that extend from or are similar to FastQC are PRI
 ### 6) Per Sequence GC Content<a name="3526"></a>
 ### 7) Per Base N Content<a name="3527"></a>
 ### 8) Sequence Length Distribution<a name="3528"></a>
-
-
 ### 9) Sequence Duplication Levels<a name="3529"></a>
 ### 10) Overrepresented Sequences<a name="35210"></a>
 ### 11) Adapter Content<a name="35211"></a>
