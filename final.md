@@ -227,7 +227,7 @@ In general, FASTQC reports simple quality control checks to ensure that there ar
 [2] University of Missouri. FASTQC_Manual. https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf <br>
 [3] Hbctraining. Introduction to RNA-seq. https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/qc_fastqc_assessment.html <br>
 [4] Michigan State University. FASTQC Tutorial & FAQ. https://rtsf.natsci.msu.edu/genomics/technical-documents/fastqc-tutorial-and-faq.aspx <br>
-[5] Babraham Bioinformatics. FASTQC. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ <br>   
+[5] Babraham Bioinformatics. FASTQC. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/<br> 
 [6] https://bioinformaticshome.com/tools/rna-seq/descriptions/PRINSEQ.html#gsc.tab=0 <br>
 [7] Babraham Bioinformatics. (2023, May 18). FASTQC Report: bad_sequence.txt. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html <br>
 [8] Babraham Bioinformatics. (2023, May 18). FASTQC Report: good_sequence_short.txt. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html <br> 
