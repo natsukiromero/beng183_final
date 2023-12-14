@@ -34,12 +34,6 @@ The report starts with a summary of the modules, each with an icon to represent 
 ### 6) Per Sequence GC Content<a name="3526"></a>
 ### 7) Per Base N Content<a name="3527"></a>
 ### 8) Sequence Length Distribution<a name="3528"></a>
-
-![Basic Statistics](https://postimg.cc/jCzdM24q “Basic Statistics Example”)
-[Figure1.](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) Basic statistics example from “Good Illumina Data” example from Babraham Institute.
-
-
-
 ### 9) Sequence Duplication Levels<a name="3529"></a>
 ### 10) Overrepresented Sequences<a name="35210"></a>
 ### 11) Adapter Content<a name="35211"></a>
