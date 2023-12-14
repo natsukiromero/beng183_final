@@ -39,21 +39,21 @@ Contains:
 6. **Sequence Length**: the length of the shortest and longest sequence in the set. If all sequences are the same length, only one value is reported.
 7. The **overall GC content** of all bases in all sequences in this file [1].
 
-<img src="basic_stats.png" alt="image" width="300" height="auto"> <br>
+<img src="basic_stats.png" alt="image" width="500" height="auto"> <br>
 
 This module does not report failing or warning. Generally it is a good idea to ensure that the read length and %GC content are as expected [3]. 
 
 ### 2) Per Base Sequence Quality<a name="3522"></a>
 **Phred quality scores** are numerical scores that report the probability that a base call is incorrect, as determined by the formula: Q = -10 log₁₀(P). The higher the Phred quality score, the higher the base call accuracy.
 
-<img src="phred_table.png" alt="image" width="300" height="auto"> <br>
+<img src="phred_table.png" alt="image" width="500" height="auto"> <br>
 
 This module gives us the Phred quality score across all bases at each position in reads in the form of box and whisker plots. The background color of the graph indicates the quality of our bases, and we want all of our data to lie in the green region. <br>
 
 It is normal for quality to start low for the first 5-7 bases, then rise. Additionally, average quality scores generally drop over the length of the read. Both phenomenon are related to signal intensity and purity of fluorescent signaling during Illumina Sequencing[3]. 
 
-<img src="per_base_seq_quality_good.png" alt="image" width="300" height="auto"> <br>
-<img src="per_base_seq_quality_bad.png" alt="image" width="300" height="auto"> <br>
+<img src="per_base_seq_quality_good.png" alt="image" width="500" height="auto">
+<img src="per_base_seq_quality_bad.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if the lower quartile < 10 or median < 25 for any base.
 
