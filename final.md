@@ -233,5 +233,5 @@ In general, FASTQC reports simple quality control checks to ensure that there ar
 [8] Babraham Bioinformatics. (2023, May 18). FASTQC Report: good_sequence_short.txt. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html <br> 
 [9] Wikipedia. Phred quality score. https://en.wikipedia.org/wiki/Phred_quality_score <br>
 [10] Sheikh, M.A., Erlich, Y. (2012). Base-Calling for Bioinformaticians. In: Rodríguez-Ezpeleta, N., Hackenberg, M., Aransay, A. (eds) Bioinformatics for High Throughput Sequencing. Springer, New York, NY. https://doi.org/10.1007/978-1-4614-0782-9_5 <br>
-[11] Romero, Natsuki. FASTQC Report: ERR188044_chrX_1.fastq. file:///C:/Users/natsuki/Documents/BENG%20183/HW3/fastqc/ERR188044_chrX_1_fastqc.html <br>
+[11] Romero, Natsuki. FASTQC Report: ERR188044_chrX_1.fastq. [ERR188044_chrX_1_clean_fastqc.html](ERR188044_chrX_1_clean_fastqc.html) <br>
 [12] Bioinfo-Core. (2010 October 28). Assessing Sequence Quality Data. http://bioinfo-core.org/index.php/9th_Discussion-28_October_2010#The_type_of_problems_which_occur_during_sequencing_experiments <br>
