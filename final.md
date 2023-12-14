@@ -52,7 +52,8 @@ This module gives us the Phred quality score across all bases at each position i
 
 It is normal for quality to start low for the first 5-7 bases, then rise. Additionally, average quality scores generally drop over the length of the read. Both phenomenon are related to signal intensity and purity of fluorescent signaling during Illumina Sequencing[3]. 
 
-<img src="per_base_seq_quality_good.png" alt="image" width="500" height="auto"> | <img src="per_base_seq_quality_bad.png" alt="image" width="500" height="auto"> <br>
+<img src="per_base_seq_quality_good.png" alt="image" width="500" height="auto"> <br> 
+<img src="per_base_seq_quality_bad.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if the lower quartile < 10 or median < 25 for any base.
 
@@ -60,13 +61,13 @@ It is normal for quality to start low for the first 5-7 bases, then rise. Additi
 
 ### 3) Per Tile Sequence Quality<a name="3523"></a>
 In Illumina sequencing, a flow cell has eight lanes, and each lane can be divided into tiles, which are the sections to be imaged.
-<img src="tile.png" alt="image" width="300" height="auto"> <br>
+<img src="tile.png" alt="image" width="500" height="auto"> <br>
 Per Tile Sequence Quality shows the deviation from the mean Phred quality for each tile.This plot will only appear in the FastQC report for Illumina library which retains its original sequence identifiers, so RNA-seq report does not have this module.
 
 Cold colors indicate the quality was at or above the average for that base, while hot colors indicate that a tile had worse quality than other tiles for that base, which point out the problems on some certain tiles in the flow cell [1]. 
 
-<img src="per_tile_sequence_quality_good.png" alt="image" width="300" height="auto"> <br>
-<img src="per_tile_sequence_quality_bad2.png" alt="image" width="300" height="auto"> <br>
+<img src="per_tile_sequence_quality_good.png" alt="image" width="500" height="auto"> <br>
+<img src="per_tile_sequence_quality_bad2.png" alt="image" width="500" height="auto"> <br>
 **Warning**: issued if any tile shows a mean Phred score >2 lower than the mean for that base across all tiles.
 
 **Failure**: issued if any tile shows a mean Phred score >5 lower than the mean for that base across all tiles [1].
@@ -77,8 +78,8 @@ A left-skewed distribution is desirable, as it means more sequences have higher 
 
 Small bumps could be caused by systematic imaging issues - for example, these sequences might be located on the edge of our field of vision, so they have a universally poor quality [1]. As long as they are just a small subset of sequences, they are not problematic, but they also suggest you take a quick examination of readings that result in low quality scores [3].
 
-<img src="per_sequence_quality_score_good.png" alt="image" width="300" height="auto"> <br>
-<img src="per_sequence_quality_score_bad.png" alt="image" width="300" height="auto"> <br>
+<img src="per_sequence_quality_score_good.png" alt="image" width="500" height="auto"> <br>
+<img src="per_sequence_quality_score_bad.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if the most frequently observed mean quality is <27.
 
@@ -91,8 +92,8 @@ The proportion of each base should be as constant as possible across the reads w
 
 However, RNA-seq data usually gives a FAIL because the ‘random’ hexamer priming that occurs during reverse transcription would make the first 10-12 bases biased [3].
 
-<img src="per_base_sequence_content_best.png" alt="image" width="300" height="auto"> <br>
-<img src="per_base_sequence_content_exp.png" alt="image" width="300" height="auto"> <br>
+<img src="per_base_sequence_content_best.png" alt="image" width="500" height="auto"> <br>
+<img src="per_base_sequence_content_exp.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if the difference between A and T, or G and C is >10% in any position.
 
@@ -103,8 +104,8 @@ This module gives the GC content across each sequence in the input file (red) an
 
 A roughly normal distribution that overlaps mostly with the modeled distribution is desired. Deviation from the modeled distribution indicates contamination or biased sequences. Sharp peaks might represent the contamination from a specific sequence, such as adapters, while broad peaks might represent contamination from another species. A normal but shifted distribution might indicate some systematic bias independent of base position [1]. In RNA sequencing, a greater or lesser distribution of mean GC content among transcripts might cause the observed distribution to be wider or narrower than an idealized normal distribution [4].
 
-<img src="per_sequence_GC_content_good.png" alt="image" width="300" height="auto"> <br>
-<img src="per_sequence_GC_content_hbc.png" alt="image" width="300" height="auto"> <br>
+<img src="per_sequence_GC_content_good.png" alt="image" width="500" height="auto"> <br>
+<img src="per_sequence_GC_content_hbc.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if the sum of the deviations from the normal distribution represents more than 15% of the reads.
 
@@ -115,9 +116,9 @@ This module reports the percentage of undetermined bases (N) at each position in
 
 We want per base N content to be kept at zero. It is usual to see a low percentage of N, especially at the end of the read. However, if the percentage rises too high, it suggests that the analysis pipeline was unable to make valid base calls – probably due to the low quality of sample [1].
 
-<img src="per_base_N_content_good.png" alt="image" width="300" height="auto"> <br>
-<img src="per_base_N_content_bad.png" alt="image" width="300" height="auto"> <br>
-<img src="per_base_N_content_manual.png" alt="image" width="300" height="auto"> <br>
+<img src="per_base_N_content_good.png" alt="image" width="500" height="auto"> <br>
+<img src="per_base_N_content_bad.png" alt="image" width="500" height="auto"> <br>
+<img src="per_base_N_content_manual.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if any position shows an N content of >5%.
 
@@ -127,8 +128,8 @@ We want per base N content to be kept at zero. It is usual to see a low percenta
 This module shows the distribution of lengths or the reads in the input file.
 Many sequencers will generate sequence fragments of uniform length, but variable length FastQ files can result in varying fragment lengths. Processing of sequences can also include trimming to remove shorter reads or those with poor base quality at the end [1].
 
-<img src="sequnce_length_distribution_good.png" alt="image" width="300" height="auto"> <br>
-<img src="sequnce_length_distribution_exp.png" alt="image" width="300" height="auto"> <br>
+<img src="sequnce_length_distribution_good.png" alt="image" width="500" height="auto"> <br>
+<img src="sequnce_length_distribution_exp.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if not all sequences are the same length.
 
@@ -141,8 +142,8 @@ Sequence duplication is an indication of the complexity of a library. Low levels
 
 In some cases, particular transcripts may be abundant in the library, which would produce high duplication levels but is an expected case [4].
 
-<img src="seq_duplication_level_good.png" alt="image" width="300" height="auto"> <br>
-<img src="seq_duplication_level_exp.png" alt="image" width="300" height="auto"> <br>
+<img src="seq_duplication_level_good.png" alt="image" width="500" height="auto"> <br>
+<img src="seq_duplication_level_exp.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if non-unique sequences make up > 20% of all sequences.
 
@@ -155,7 +156,7 @@ Because sequences are listed with possible sources, contaminators, such as adapt
 
 Mapping tools such as STAR, which are used later in the RNA-seq analysis pipeline, are able to account for adapter and vector contamination, so these are generally not a concern [3].
 
-<img src="overrepresented_sequences_bad.png" alt="image" width="300" height="auto"> <br>
+<img src="overrepresented_sequences_bad.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if any sequence represents ≥ 0.1% of all total sequences.
 
@@ -168,9 +169,9 @@ For any one particular sequence analyzed, once an adapter is identified, it is c
 
 Ideally, there should be no adapters present in the data. However, sometimes when working with long read lengths, inserts shorter than the read length have read-throughs to the adapter at 3’ end. If adapter content is present and constant throughout the length of the read, this indicates adapter dimer contamination [4].
 
-<img src="adapter_content_good.png" alt="image" width="300" height="auto"> <br>
-<img src="adapter_content_manual.png" alt="image" width="300" height="auto"> <br>
-<img src="adapter_content_dimer.png" alt="image" width="300" height="auto"> <br>
+<img src="adapter_content_good.png" alt="image" width="500" height="auto"> <br>
+<img src="adapter_content_manual.png" alt="image" width="500" height="auto"> <br>
+<img src="adapter_content_dimer.png" alt="image" width="500" height="auto"> <br>
 
 **Warning**: issued if any sequence is present in > 5% of all sequences.
 
