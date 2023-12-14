@@ -26,9 +26,21 @@ Some examples of current tools that extend from or are similar to FastQC are PRI
 ## 35.2 QC Report Analysis Modules<a name="352"></a>
 fastqc generates a final report in a .html file, which can be opened with any browser. Looking through this report, we can read the analysis modules and their metrics to assess the quality of our sequencing data.
 
-The report starts with a summary of the modules, each with an icon to represent their status as “PASS,” “WARNING,” or “FAIL.” The “WARNING” and “FAIL” flags are not meant to be taken at face value, rather noted as a sign to take a closer look at that module.
+The report starts with a summary of the modules, each with an icon to represent their status as PASS, WARNING, or FAIL. The WARNING and FAIL flags are not meant to be taken at face value, rather noted as a sign to take a closer look at that module [3].
 
 ### 1) Basic Statistics<a name="3521"></a>
+This is the first module given in a FastQC report.
+
+
+Contains:
+1. **Original file name**
+2. **File type**: whether the file appeared to contain actual base calls or colorspace data which had to be converted to base calls
+3. **Encoding**: which ASCII encoding of quality values was found in this file.
+4. **Total number of sequences processed**
+5. **The number of sequences flagged as poor quality**
+6. **Sequence Length**: the length of the shortest and longest sequence in the set. If all sequences are the same length, only one value is reported.
+7. The **overall GC content** of all bases in all sequences in this file [1].
+
 ### 2) Per Base Sequence Quality<a name="3522"></a>
 ### 3) Per Tile Sequence Quality<a name="3523"></a>
 ### 4) Per Sequence Quality Scores<a name="3524"></a>
